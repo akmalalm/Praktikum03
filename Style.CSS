@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+/* Bagian header */
+header {
+    background-color: yellow;
+    border: 1px solid gray;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header h1 {
+    margin: 10px 0 5px;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+/* Bagian navigasi */
+nav {
+    background-color: greenyellow;
+    border: 1px solid gray;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Bagian artikel dan aside */
+.layout {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: stretch;
+}
+
+article {
+    background-color: #ffcc66;
+    border: 1px solid gray;
+    padding: 15px;
+    flex: 3;
+}
+
+article section {
+    background-color: #ffdf66;
+    border: 1px solid gray;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+aside {
+    background-color: #00ceb9;
+    border: 1px solid gray;
+    padding: 15px;
+    flex: 1;
+}
+
+aside img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+aside a {
+    color: black;
+}
+
+/* Bagian footer */
+footer {
+    background-color: yellow;
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Tampilan untuk HP */
+@media (max-width: 600px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+}
